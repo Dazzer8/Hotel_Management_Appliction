@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const connectDB = require('./config/db');
-const authRoutes = require('./routes/authRoutes');
-const hotelRoutes = require('./routes/hotelRoutes');
+const authRoutes = require('./routers/authRoutes');
+const hotelRoutes = require('./routers/hotelRoutes');
 const bookingRoutes = require('./routes/bookingRoutes');
 require('dotenv').config();
 
