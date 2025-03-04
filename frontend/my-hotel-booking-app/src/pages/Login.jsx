@@ -28,8 +28,10 @@ const Login = () => {
 return (
     <Container>
       <h2>Login</h2>
+      <p>Please use your ID and password to login</p>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formBasicEmail">
+        <i class= "fas fa-envelope"></i>
           <Form.Label>Email address</Form.Label>
           <Form.Control
             type="email"

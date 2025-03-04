@@ -71,6 +71,7 @@ const Signup = () => {
             </Form.Group>
 
             <Form.Group controlId="formEmail" className="mb-3">
+              <i class= "fas fa-envelope"></i>
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"
