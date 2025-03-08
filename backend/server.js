@@ -3,14 +3,15 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const connectDB = require('./config/db');
-const authRoutes = require('./routers/authRoutes');
+
 const hotelRoutes = require('./routers/hotelRoutes');
 const bookingRoutes = require('./routers/bookingRoutes');
+const authRoutes = require('./routers/authRoutes');
 require('dotenv').config();
 
 const app = express();
 app.use(express.json());
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: 'http://localhost:3000/register' }));
 app.use(cookieParser());
 connectDB();
 
